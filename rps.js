@@ -46,6 +46,9 @@ else if(player === "scissors"){
     console.log("Rock Beats Scissors. You Lose")
   }
 }
+else {
+  console.log("Something went wrong.")
+}
 }
 
 // Main game loop
