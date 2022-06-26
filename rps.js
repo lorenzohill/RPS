@@ -11,6 +11,7 @@ function playRound(player, CPU) {
 player = player.toLowerCase()
 console.log("Player Chose " + player)
 console.log("CPU selected " + CPU)
+// Check Win state
 if (player === CPU){
   console.log("You Tie.")
 }
@@ -49,10 +50,7 @@ else if(player === "scissors"){
 
 // Main game loop
 function mainLoop() {
- // let player = prompt("Enter Rock, Paper or Scissors")  
- // Below code is for Debug
- player = ["rock", "paper","scissors"]
- player = player[Math.floor(Math.random()*player.length)];
+ let player = prompt("Enter Rock, Paper or Scissors") 
  CPU = cpuSelect()
 playRound(player, CPU)
 console.log("You have " + wins + " wins")
