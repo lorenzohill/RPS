@@ -1,5 +1,21 @@
 let wins = 0
+const pPaper = document.querySelector('#paper')
+pPaper.addEventListener("click", function(){
+  mainLoop('paper')
+})
+mainLoop
+const pRock = document.querySelector('#rock')
+pRock.addEventListener("click", function(){
+  mainLoop('rock')
+})
+
+const pScissor = document.querySelector('#scissor')
+pScissor.addEventListener("click", function(){
+  mainLoop('scissors')
+})
+
 // Gets CPU input
+
 function cpuSelect(){
 let select = ["rock", "paper","scissors"]
 select = select[Math.floor(Math.random()*select.length)];
@@ -52,8 +68,7 @@ else {
 }
 
 // Main game loop
-function mainLoop() {
- let player = prompt("Enter Rock, Paper or Scissors") 
+function mainLoop(player) { 
  CPU = cpuSelect()
 playRound(player, CPU)
 console.log("You have " + wins + " wins")
