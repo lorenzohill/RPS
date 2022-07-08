@@ -26,3 +26,7 @@ img:hover{
     height: 10em;
     width: 10em;
 }
+
+.hide{
+    display: none;
+}

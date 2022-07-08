@@ -13,21 +13,27 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button style="width: 100%; height: auto; background-color: purple;" onclick="mainLoop()">
-        <h1>Play</h1>
-        </button>
-        <span>Results go Here</span>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using ;an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="playercontainer">
-            <div class="selections">
-                <img src="./images/paper.png" alt="" id="paper">
-                <img src="./images/rock.png" alt="" id="rock">
-                <img src="./images/scissors.png" alt="" id="scissor">
+
+        <div id="game">
+
+            <span id="results">Click your selection to Play</span>
+            <span id="wins"></span>
+            <!--[if lt IE 7]>
+                <p class="browsehappy">You are using ;an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+                <![endif]-->
+                <div class="playercontainer">
+                    <div class="selections">
+                        <img src="./images/paper.png" alt="" id="paper">
+                        <img src="./images/rock.png" alt="" id="rock">
+                        <img src="./images/scissors.png" alt="" id="scissor">
+                    </div>
+                </div>
             </div>
-        </div>
-        
+            <div id="winPage" class="hide">
+                <h1></h1>
+                <button onclick="reset()">Reset</button>
+            </div>
+                
         <script src="rps.js" async defer></script>
     </body>
 </html>
