@@ -6,7 +6,8 @@ body{
 }
 
 .playercontainer{
-    background-color: rgba(44, 7, 15, 0.425);
+    background-color: lightblue;
+    border-radius: 10em;
     height: 20em;
     width: 40em;
     display: flex;
@@ -30,3 +31,14 @@ img:hover{
 .hide{
     display: none;
 }
+
+#results{
+    background-color: aliceblue;
+    border-radius: 8px;
+    font-size: 3em;
+}
+
+#wins{
+    font-size: 3em;
+}
+

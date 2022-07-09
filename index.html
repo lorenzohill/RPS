@@ -11,13 +11,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     </head>
     <body>
 
         <div id="game">
 
             <span id="results">Click your selection to Play</span>
-            <span id="wins"></span>
             <!--[if lt IE 7]>
                 <p class="browsehappy">You are using ;an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
                 <![endif]-->
@@ -29,6 +29,7 @@
                     </div>
                 </div>
             </div>
+            <span id="wins"></span>
             <div id="winPage" class="hide">
                 <h1></h1>
                 <button onclick="reset()">Reset</button>
